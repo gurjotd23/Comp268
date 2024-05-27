@@ -1,3 +1,4 @@
+package Assignments.Assignment1;
 import java.util.Scanner;
 /**
  * title: Problem2.java

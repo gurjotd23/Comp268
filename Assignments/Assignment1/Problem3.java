@@ -1,3 +1,4 @@
+package Assignments.Assignment1;
 /**
  * title: Problem3.java
  * description: Assignment 1, Problem 3 - Make a temperature conversion table

@@ -1,3 +1,4 @@
+package Assignments.Assignment1;
 /**
  * title: Problem5.java
  * description: Assignment 1, Problem 5 - Create program to list prime numbers from 1 to 10,000

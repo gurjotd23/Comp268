@@ -1,3 +1,4 @@
+package Assignments.Assignment1;
 /**
  * title: Problem4.java
  * description: Assignment 1, Problem 4 - Create a Java help menu

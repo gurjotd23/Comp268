@@ -1,3 +1,11 @@
+package Assignments.Assignment1;
+/**
+ * title: Problem1.java
+ * description: Assignment 1, Problem 1 - generate a multiplication table for 1 - 12
+ * date: May 21, 2024
+ * @author Gurjot Singh Dhanda
+ * @version 1.0
+ */
 /**
  * A program to display a multiplication table on standard output.
  * The table includes numbers from 1 to 12.
