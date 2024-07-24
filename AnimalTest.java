@@ -4,6 +4,7 @@
  * date: May 24, 2024
  * @author Gurjot Singh Dhanda 3691531
  * @version 1.0
+ * @copyright 2011- 2024 Gurjot Singh Dhanda
  */
 /**
  * The AnimalTest class demonstrates the use of inheritance and polymorphism in Java.

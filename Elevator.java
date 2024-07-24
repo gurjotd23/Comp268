@@ -1,4 +1,12 @@
 /**
+ * title: Animal.java
+ * description: Assignment 2, Problem 3 - Create an Elevator class.
+ * date: July 23, 2024
+ * @author Gurjot Singh Dhanda 3691531
+ * @version 1.0
+ * @copyright 2011- 2024 Gurjot Singh Dhanda
+ */
+/**
  * The Elevator class represents an elevator in a building, capable of moving between floors.
  * It includes functionality to initialize the elevator, move between floors, and simulate the 
  * destruction of the elevator.

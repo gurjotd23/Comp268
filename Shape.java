@@ -1,4 +1,11 @@
-
+/**
+ * title: Animal.java
+ * description: Assignment 2, Problem 5 - Create a Point and Shape Class
+ * date: July 23, 2024
+ * @author Gurjot Singh Dhanda 3691531
+ * @version 1.0
+ * @copyright 2011- 2024 Gurjot Singh Dhanda
+ */
 /**
  * DOCUMENTATION...
  */
@@ -265,12 +272,20 @@
  *</P>
  */
 
+/**
+ * Base class representing a generic geometric shape.
+ */
 public class Shape {
     
+    // Attributes to store the area, circumference, and name of the shape.
     protected double area;
     protected double circumference;
     protected String name;
 
+    /**
+     * Default constructor initializes a shape with default values.
+     * Sets the name to "Shape", and area and circumference to 0.
+     */
     public Shape() {
         this.name = "Shape";
         this.circumference = 0;
@@ -279,18 +294,34 @@ public class Shape {
         System.out.println("A new shape has been made.");
     }
 
+    /**
+     * Gets the area of the shape.
+     * @return the area of the shape.
+     */
     public double getArea() {
         return area;
     }
 
+    /**
+     * Gets the circumference of the shape.
+     * @return the circumference of the shape.
+     */
     public double getCircumference() {
         return circumference;
     }
 
+    /**
+     * Gets the name of the shape.
+     * @return the name of the shape.
+     */
     public String getName() {
         return name;
     }
 
+    /**
+     * Sets the name of the shape.
+     * @param newName the new name to set. If null, an error message is printed.
+     */
     public void setName(String newName) {
         if (newName == null) {
             System.out.println("The new name value is null");
@@ -299,18 +330,33 @@ public class Shape {
         }
     }
 
+    /**
+     * Method to calculate the area of the shape. 
+     * Placeholder method to be overridden by subclasses.
+     */
     public void calculateArea() {
         System.out.println("This method calculates the area of a shape.");
     }
 
+    /**
+     * Method to calculate the circumference of the shape.
+     * Placeholder method to be overridden by subclasses.
+     */
     public void calculateCircumference() {
         System.out.println("This method calculates the circumference/perimeter of a shape.");
     }
 
+    /**
+     * Method to return the bounding box of the shape.
+     * Placeholder method to be overridden by subclasses.
+     */
     public void boundingBox() {
         System.out.println("This method returns the bounding box of a shape.");
     }
 
+    /**
+     * Displays information about the shape, including name, area, circumference, and bounding box.
+     */
     public void display() {
         System.out.println("Information for this shape:");
         System.out.println("Name: " + getName());
@@ -319,52 +365,58 @@ public class Shape {
         System.out.println("Bounding Box: N/A");
     }
 
+    /**
+     * Main method to demonstrate the use of Shape and its subclasses.
+     * Creates instances of Rectangle, Triangle, and Circle, and displays their properties.
+     */
     public static void main (String [] args) {
         System.out.println();
 
+        // Create a Rectangle instance and display its properties.
         Point bottomLeft = new Point(0,0, false);
         Point topRight = new Point(3, 4, false);
-
         Rectangle r1 = new Rectangle(bottomLeft, topRight);
         r1.display();
 
         System.out.println();
 
+        // Create another Rectangle instance and display its properties.
         Point bottomLeft2 = new Point(0,0, false);
         Point topRight2 = new Point(4, 4, false);
-
         Rectangle s1 = new Rectangle(bottomLeft2, topRight2);
         s1.display();
 
         System.out.println();
 
+        // Create a Triangle instance and display its properties.
         Point p1 = new Point(0, 0, false);
         Point p2 = new Point(2, 4, false);
         Point p3 = new Point(4, 0, false);
-
         Triangle t1 = new Triangle(p1, p2, p3);
         t1.display();
 
         System.out.println();
 
+        // Create a Circle instance and display its properties.
         Point center = new Point(2, 3, false);
         Point perimeter = new Point(5, 7, false);
-
         Circle c1 = new Circle(center, perimeter);
         c1.display();
 
         System.out.println();
 
+        // Create a Rectangle instance with zero width and height and demonstrate its properties.
         Point bottomLeft3 = new Point(0,0, false);
         Point topRight3 = new Point(0, 0, false);
-
         Rectangle r3 = new Rectangle(bottomLeft3, topRight3);
 
         System.out.println();
     }
-
 }
 
+/**
+ * Class representing a Rectangle, a specific type of Shape.
+ */
 class Rectangle extends Shape {
 
     private Point bottomLeft;
@@ -372,6 +424,12 @@ class Rectangle extends Shape {
     private int width;
     private int height;
 
+    /**
+     * Constructor to initialize a Rectangle with two points: bottom left and top right.
+     * Calculates dimensions, area, and circumference, and determines if the shape is a square.
+     * @param bottomLeft the bottom-left point of the rectangle.
+     * @param topRight the top-right point of the rectangle.
+     */
     public Rectangle(Point bottomLeft, Point topRight) {
         super();
 
@@ -399,6 +457,10 @@ class Rectangle extends Shape {
         System.out.println("A new " + name + " has been made.");
     }
 
+    /**
+     * Updates the dimensions of the rectangle based on the bottom left and top right points.
+     * Recalculates the area and circumference.
+     */
     public void updateDimnesions() {
         this.width = topRight.getX() - bottomLeft.getX();
         this.height = topRight.getY() - bottomLeft.getY();
@@ -411,6 +473,10 @@ class Rectangle extends Shape {
         calculateArea(true);
     }
 
+    /**
+     * Calculates the area of the rectangle. Optionally prints the result.
+     * @param printResult if true, prints the area of the rectangle.
+     */
     public void calculateArea(boolean printResult) {
         this.area = width * height;
         if (printResult) {
@@ -423,6 +489,10 @@ class Rectangle extends Shape {
         calculateCircumference(true);
     }
 
+    /**
+     * Calculates the circumference of the rectangle. Optionally prints the result.
+     * @param printResult if true, prints the circumference of the rectangle.
+     */
     public void calculateCircumference(boolean printResult) {
         this.circumference = 2 * (width + height);
         if (printResult) {
@@ -451,10 +521,18 @@ class Rectangle extends Shape {
         boundingBox();
     }
 
+    /**
+     * Gets the bottom left point of the rectangle.
+     * @return the bottom left point.
+     */
     public Point getBottomLeft() {
         return bottomLeft;
     }
 
+    /**
+     * Sets the bottom left point of the rectangle and updates its dimensions.
+     * @param bottomLeft the new bottom left point.
+     */
     public void setBottomLeft(Point bottomLeft) {
         if (bottomLeft.getX() >= topRight.getX() || bottomLeft.getY() >= topRight.getY()) {
             throw new IllegalArgumentException("Invalid coordinates: Bottom left point must be less than top right point.");
@@ -463,10 +541,18 @@ class Rectangle extends Shape {
         updateDimnesions();
     }
 
+    /**
+     * Gets the top right point of the rectangle.
+     * @return the top right point.
+     */
     public Point getTopRight() {
         return topRight;
     }
 
+    /**
+     * Sets the top right point of the rectangle and updates its dimensions.
+     * @param topRight the new top right point.
+     */
     public void setTopRight(Point topRight) {
         if (bottomLeft.getX() >= topRight.getX() || bottomLeft.getY() >= topRight.getY()) {
             throw new IllegalArgumentException("Invalid coordinates: Bottom left point must be less than top right point.");
@@ -476,11 +562,21 @@ class Rectangle extends Shape {
     }
 }
 
+/**
+ * Class representing a Triangle, a specific type of Shape.
+ */
 class Triangle extends Shape {
     private Point p1;
     private Point p2;
     private Point p3;
 
+    /**
+     * Constructor to initialize a Triangle with three points.
+     * Calculates the area and circumference, and validates the triangle.
+     * @param p1 the first point of the triangle.
+     * @param p2 the second point of the triangle.
+     * @param p3 the third point of the triangle.
+     */
     public Triangle(Point p1, Point p2, Point p3) {
         super();
 
@@ -499,6 +595,13 @@ class Triangle extends Shape {
         System.out.println("A new triangle has been created.");
     }
 
+    /**
+     * Checks if three points form a valid triangle.
+     * @param p1 the first point.
+     * @param p2 the second point.
+     * @param p3 the third point.
+     * @return true if the points form a valid triangle, false otherwise.
+     */
     private boolean isValidTriangle(Point p1, Point p2, Point p3) {
         double area = 0.5 * Math.abs(p1.getX() * (p2.getY() - p3.getY()) + p2.getX() * (p3.getY() - p1.getY()) + p3.getX() * (p1.getY() - p2.getY()));
         return area != 0;
@@ -509,6 +612,10 @@ class Triangle extends Shape {
         calculateArea(true);
     }
 
+    /**
+     * Calculates the area of the triangle. Optionally prints the result.
+     * @param printResult if true, prints the area of the triangle.
+     */
     public void calculateArea(boolean printResult) {
         this.area = 0.5 * Math.abs(p1.getX() * (p2.getY() - p3.getY()) + p2.getX() * (p3.getY() - p1.getY()) + p3.getX() * (p1.getY() - p2.getY()));
         if (printResult) {
@@ -516,6 +623,14 @@ class Triangle extends Shape {
         }
     }
 
+    /**
+     * Calculates the distance between two points.
+     * @param x1 x-coordinate of the first point.
+     * @param y1 y-coordinate of the first point.
+     * @param x2 x-coordinate of the second point.
+     * @param y2 y-coordinate of the second point.
+     * @return the distance between the two points.
+     */
     public static double distance(double x1, double y1, double x2, double y2) {
         return Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
     }
@@ -525,6 +640,10 @@ class Triangle extends Shape {
         calculateCircumference(true);
     }
 
+    /**
+     * Calculates the circumference of the triangle. Optionally prints the result.
+     * @param printResult if true, prints the circumference of the triangle.
+     */
     public void calculateCircumference(boolean printResult) {
         double AB = distance(p1.getX(), p1.getY(), p2.getX(), p2.getY());
         double BC = distance(p2.getX(), p2.getY(), p3.getX(), p3.getY());
@@ -538,11 +657,20 @@ class Triangle extends Shape {
     }
 }
 
+/**
+ * Class representing a Circle, a specific type of Shape.
+ */
 class Circle extends Shape {
     private Point center;
     private Point perimeter;
     private double radius;
 
+    /**
+     * Constructor to initialize a Circle with center and perimeter points.
+     * Calculates the radius and validates the circle.
+     * @param center the center point of the circle.
+     * @param perimeter a point on the perimeter of the circle.
+     */
     public Circle(Point center, Point perimeter) {
         super();
 
@@ -561,6 +689,14 @@ class Circle extends Shape {
         calculateCircumference(false);
     }
 
+    /**
+     * Calculates the distance between two points.
+     * @param x1 x-coordinate of the first point.
+     * @param y1 y-coordinate of the first point.
+     * @param x2 x-coordinate of the second point.
+     * @param y2 y-coordinate of the second point.
+     * @return the distance between the two points.
+     */
     public static double distance(double x1, double y1, double x2, double y2) {
         return Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
     }
@@ -570,8 +706,11 @@ class Circle extends Shape {
         calculateCircumference(true);
     }
 
+    /**
+     * Calculates the circumference of the circle. Optionally prints the result.
+     * @param printResult if true, prints the circumference of the circle.
+     */
     public void calculateCircumference(boolean printResult) {
-
         this.circumference = 2 * Math.PI * radius;
 
         if (printResult) {
@@ -584,28 +723,35 @@ class Circle extends Shape {
         calculateArea(true);
     }
 
+    /**
+     * Calculates the area of the circle. Optionally prints the result.
+     * @param printResult if true, prints the area of the circle.
+     */
     public void calculateArea(boolean printResult) {
         this.area = Math.PI * radius * radius;
         if (printResult) {
             System.out.println("Area of the " + this.name + ": " + this.area);
         }
     }
-
-
 }
 
 
 
+/**
+ * Class representing a point in a 2D plane.
+ */
 class Point {
     
     private int x;
     private int y;
     private boolean shouldPrint;
 
-    public Point(int x, int y) {
-        this(x, y, true);
-    }
-
+    /**
+     * Constructor to initialize a Point with coordinates and optional print flag.
+     * @param x x-coordinate of the point.
+     * @param y y-coordinate of the point.
+     * @param shouldPrint if true, prints the point's coordinates upon creation.
+     */
     public Point(int x, int y, boolean shouldPrint) {
         this.x = x;
         this.y = y;
@@ -616,31 +762,62 @@ class Point {
         }
     }
 
+    /**
+     * Gets the x-coordinate of the point.
+     * @return the x-coordinate.
+     */
     public int getX() {
         return x;
     }
 
+    /**
+     * Sets the x-coordinate of the point.
+     * @param newX the new x-coordinate.
+     */
     public void setX(int newX) {
         this.x = newX;
     }
 
+    /**
+     * Gets the y-coordinate of the point.
+     * @return the y-coordinate.
+     */
     public int getY() {
         return y;
     }
 
+    /**
+     * Sets the y-coordinate of the point.
+     * @param newY the new y-coordinate.
+     */
     public void setY(int newY) {
         this.y = newY;
     }
 
+    /**
+     * Displays the coordinates of the point.
+     */
     public void show() {
         System.out.println("Point coordinates are " + getX() + ", " + getY());
     }
 
+    /**
+     * Subtracts a given x and y from the point's coordinates.
+     * @param x1 x-coordinate to subtract.
+     * @param y1 y-coordinate to subtract.
+     * @return a new Point with the resulting coordinates.
+     */
     public Point subtract(int x1, int y1) {
-        return new Point(this.x - x1, this.y - y1);
+        return new Point(this.x - x1, this.y - y1, true);
     }
 
+    /**
+     * Adds a given x and y to the point's coordinates.
+     * @param x1 x-coordinate to add.
+     * @param y1 y-coordinate to add.
+     * @return a new Point with the resulting coordinates.
+     */
     public Point add(int x1, int y1) {
-        return new Point(this.x + x1, this.y + y1);
+        return new Point(this.x + x1, this.y + y1, true);
     }
 }

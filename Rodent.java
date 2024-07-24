@@ -4,6 +4,7 @@
  * date: May 25, 2024
  * @author Gurjot Singh Dhanda 3691531
  * @version 1.0
+ * @copyright 2011- 2024 Gurjot Singh Dhanda
  */
 /**
  * The Rodent class represents a generic rodent with basic behaviors such as eating, sleeping,
