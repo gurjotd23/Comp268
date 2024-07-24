@@ -9,6 +9,150 @@
  * The Book class represents a book with attributes such as title, ISBN number,
  * author, edition, publisher, and year of publication.
  */
+
+/**
+ *
+ *<H1>Book Class</H1>
+ *
+ *<H3>Purpose and Description</H3>
+ *
+ *<P>
+ * This class models a book with several attributes, including title, ISBN number,
+ * author, edition, publisher, and year of publication. It provides getter and setter
+ * methods for these attributes, a method to display book details, and a main method
+ * to demonstrate the creation and display of book objects.
+ *</P>
+ *
+ *<DL>
+ *<DT> Compiling and running instructions</DT>
+ *<DT> Assuming Java SDK is installed and properly set up.</DT>
+ *<DT> Change to the directory containing the source code.</DT>
+ *<DD> Compile:    javac Book.java</DD>
+ *<DD> Run:        java Book</DD>
+ *<DD> Document:   javadoc Book.java</DD>
+ *</DL>
+ */
+
+/**
+ *
+ *<H3>Book Class Details</H3>
+ *
+ *<P>
+ * public class Book {<BR>
+ * This is the main class representing a book. It contains attributes for the title,
+ * ISBN, author, edition, publisher, and year of publication, as well as methods to
+ * access and modify these attributes, and a method to display the book's details.
+ *</P>
+ *
+ * <H3>Book Methods</H3>
+ *
+ *<P>
+ * public Book(String title, String isbn, String author, String edition, String publisher, int yearOfPublication) {<BR>
+ * Constructor for the Book class. Initializes a new book with the provided title, ISBN,
+ * author, edition, publisher, and year of publication.
+ *</P>
+ *<P>
+ * public String getTitle() {<BR>
+ * Returns the title of the book.
+ *</P>
+ *<P>
+ * public void setTitle(String newTitle) {<BR>
+ * Sets the title of the book. Prints a message if the new title is null.
+ *</P>
+ *<P>
+ * public String getISBN() {<BR>
+ * Returns the ISBN number of the book.
+ *</P>
+ *<P>
+ * public void setISBN(String newIsbn) {<BR>
+ * Sets the ISBN number of the book. Prints a message if the new ISBN is null.
+ *</P>
+ *<P>
+ * public String getAuthor() {<BR>
+ * Returns the author of the book.
+ *</P>
+ *<P>
+ * public void setAuthor(String newAuthor) {<BR>
+ * Sets the author of the book. Prints a message if the new author is null.
+ *</P>
+ *<P>
+ * public String getEdition() {<BR>
+ * Returns the edition of the book.
+ *</P>
+ *<P>
+ * public void setEdition(String newEdition) {<BR>
+ * Sets the edition of the book. Prints a message if the new edition is null.
+ *</P>
+ *<P>
+ * public String getPublisher() {<BR>
+ * Returns the publisher of the book.
+ *</P>
+ *<P>
+ * public void setPublisher(String newPublisher) {<BR>
+ * Sets the publisher of the book. Prints a message if the new publisher is null.
+ *</P>
+ *<P>
+ * public int getYearOfPublication() {<BR>
+ * Returns the year of publication of the book.
+ *</P>
+ *<P>
+ * public void setYearOfPublication(int newYearOfPublication) {<BR>
+ * Sets the year of publication of the book. Prints a message if the new year is 0.
+ *</P>
+ *<P>
+ * public void displayBookDetails() {<BR>
+ * Displays the details of the book, including title, ISBN, author, edition, publisher,
+ * and year of publication.
+ *</P>
+ *<P>
+ * public static void main(String[] args) {<BR>
+ * Demonstrates the creation of Book objects and displays their details using the
+ * displayBookDetails method.
+ *</P>
+ */
+
+/**
+ *
+ *<H3>Test Plan</H3>
+ *
+ *<P>
+ * 1. Run the application.
+ * EXPECTED:
+ *    Console should display the details of five books, each followed by a blank line.
+ * ACTUAL:
+ *    Console displays the details of each book as expected.
+ *</P>
+ *<P>
+ * 2. Good data cases:
+ * EXPECTED:
+ *    Book objects created with valid data should display the correct details:
+ *    - Book 1: "Too Big to Fail", ISBN: "9780670021253", Author: "Andrew Ross Sorkin", Edition: "1st", Publisher: "Viking Press", Year: 2009
+ *    - Book 2: "The Options Playbook", ISBN: "9798989888702", Author: "Brian Overby", Edition: "2nd", Publisher: "Options Playbook, Incorporated", Year: 2009
+ *    - Book 3: "Flash Boys: A Wall Street Revolt", ISBN: "9780393244663", Author: "Michael Lewis", Edition: "1st", Publisher: "W. W. Norton & Company", Year: 2014
+ *    - Book 4: "No Logo: Taking Aim at the Brand Bullies", ISBN: "9780006530404", Author: "Naomi Klein", Edition: "1st", Publisher: "Knopf Canada, Picador", Year: 1999
+ *    - Book 5: "Debt: The First 5000 Years", ISBN: "9781933633862", Author: "David Graeber", Edition: "1st", Publisher: "Melville House", Year: 2011
+ * ACTUAL:
+ *    Results match the expected output.
+ *</P>
+ *<P>
+ * 3. Bad data cases:
+ * EXPECTED:
+ *    The setter methods will print appropriate messages if provided null or invalid values.
+ *    Example: Setting the title to null should print "New title value is null."
+ * ACTUAL:
+ *    Results match the expected behavior, with appropriate messages printed for null values.
+ *</P>
+ */
+
+/**
+ * Java core packages
+ */
+import java.util.*;
+
+/**
+ * The Book class represents a book with attributes such as title, ISBN number,
+ * author, edition, publisher, and year of publication.
+ */
 public class Book {
     // Private attributes
     private String title;              // The title of the book

@@ -8,31 +8,54 @@
 /**
  * The Animal class and its subclasses represent different animals.
  * Each animal can make a sound, and the program demonstrates polymorphism by calling the sound method on different animal objects.
- * Test Plan:
- * 
- * 1. No Command-Line Argument
- *    - Run the program without any command-line arguments.
- *    - Expected Output: "One animal name is required!" and the program should exit.
- * 
- * 2. Multiple Command-Line Arguments
- *    - Run the program with more than one command-line argument.
- *    - Example: java AnimalTest pig cow
- *    - Expected Output: "Only one animal name can be passed into the parameters!" and the program should exit.
- * 
- * 3. Valid Animal Names
- *    - Run the program with a single valid animal name (pig, sheep, duck, cow).
- *    - Example: java AnimalTest pig
- *    - Expected Output:
- *      "I am an animal"
- *      "I am a pig"
- *      "Pig says oink"
- * 
- * 4. Invalid Animal Name
- *    - Run the program with an invalid animal name.
- *    - Example: java AnimalTest cat
- *    - Expected Output:
- *      "Invalid input, please try again."
- *      "Input must be one of pig, sheep, duck, or cow."
+ *
+ * <H1>Animal Class Hierarchy</H1>
+ * <P>
+ * The program consists of an abstract base class <code>Animal</code> and several subclasses representing specific animals.
+ * Each subclass overrides the <code>sound</code> method to provide an animal-specific sound.
+ * </P>
+ *
+ * <H2>Test Plan:</H2>
+ * <H3>1. No Command-Line Argument</H3>
+ * <P>
+ * Run the program without any command-line arguments.
+ * <BR> Expected Output: "One animal name is required!" and the program should exit.
+ * </P>
+ *
+ * <H3>2. Multiple Command-Line Arguments</H3>
+ * <P>
+ * Run the program with more than one command-line argument.
+ * <BR> Example: <code>java AnimalTest pig cow</code>
+ * <BR> Expected Output: "Only one animal name can be passed into the parameters!" and the program should exit.
+ * </P>
+ *
+ * <H3>3. Valid Animal Names</H3>
+ * <P>
+ * Run the program with a single valid animal name (pig, sheep, duck, cow).
+ * <BR> Example: <code>java AnimalTest pig</code>
+ * <BR> Expected Output:
+ * <UL>
+ *   <LI>"I am an animal"</LI>
+ *   <LI>"I am a pig"</LI>
+ *   <LI>"Pig says oink"</LI>
+ * </UL>
+ * </P>
+ *
+ * <H3>4. Invalid Animal Name</H3>
+ * <P>
+ * Run the program with an invalid animal name.
+ * <BR> Example: <code>java AnimalTest cat</code>
+ * <BR> Expected Output:
+ * <UL>
+ *   <LI>"Invalid input, please try again."</LI>
+ *   <LI>"Input must be one of pig, sheep, duck, or cow."</LI>
+ * </UL>
+ * </P>
+ */
+
+/**
+ * The Animal class represents a generic animal.
+ * It provides a constructor that prints a generic animal message and a method to print a generic sound.
  */
 public class Animal {
 
@@ -53,8 +76,8 @@ public class Animal {
     }
 
     /**
-     * The main method where the program execution begins.
-     * It creates instances of different animal subclasses and calls their sound methods.
+     * The main method demonstrates polymorphism by creating instances of various animal subclasses.
+     * It calls the <code>sound</code> method on each instance to display the animal-specific sounds.
      *
      * @param args Command line arguments (not used in this program).
      */
@@ -81,7 +104,7 @@ public class Animal {
 
 /**
  * The Pig class represents a pig and extends the Animal class.
- * It overrides the sound method to provide a pig-specific sound.
+ * It overrides the <code>sound</code> method to provide a pig-specific sound.
  */
 class Pig extends Animal {
 
@@ -104,7 +127,7 @@ class Pig extends Animal {
 
 /**
  * The Sheep class represents a sheep and extends the Animal class.
- * It overrides the sound method to provide a sheep-specific sound.
+ * It overrides the <code>sound</code> method to provide a sheep-specific sound.
  */
 class Sheep extends Animal {
 
@@ -127,7 +150,7 @@ class Sheep extends Animal {
 
 /**
  * The Duck class represents a duck and extends the Animal class.
- * It overrides the sound method to provide a duck-specific sound.
+ * It overrides the <code>sound</code> method to provide a duck-specific sound.
  */
 class Duck extends Animal {
 
@@ -150,7 +173,7 @@ class Duck extends Animal {
 
 /**
  * The Cow class represents a cow and extends the Animal class.
- * It overrides the sound method to provide a cow-specific sound.
+ * It overrides the <code>sound</code> method to provide a cow-specific sound.
  */
 class Cow extends Animal {
 

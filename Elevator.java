@@ -1,14 +1,118 @@
 /**
- * title: Book.java
- * description: Assignment 2, Problem 3 - Create an Elevator Class
- * date: May 25, 2024
- * @author Gurjot Singh Dhanda 3691531
- * @version 1.0
- */
-/**
  * The Elevator class represents an elevator in a building, capable of moving between floors.
  * It includes functionality to initialize the elevator, move between floors, and simulate the 
  * destruction of the elevator.
+ */
+
+/**
+ *
+ *<H1>Elevator Class</H1>
+ *
+ *<H3>Purpose and Description</H3>
+ *
+ *<P>
+ * This class models an elevator system within a building. It allows the initialization of
+ * an elevator for a building with a specified number of floors, provides methods to move
+ * between floors, and includes functionality to simulate the destruction of the elevator.
+ *</P>
+ *
+ *<DL>
+ *<DT> Compiling and running instructions</DT>
+ *<DT> Assuming Java SDK is installed and properly set up.</DT>
+ *<DT> Change to the directory containing the source code.</DT>
+ *<DD> Compile:    javac Elevator.java</DD>
+ *<DD> Run:        java Elevator</DD>
+ *<DD> Document:   javadoc Elevator.java</DD>
+ *</DL>
+ */
+
+/**
+ *
+ *<H3>Elevator Class Details</H3>
+ *
+ *<P>
+ * public class Elevator {<BR>
+ * This is the main class representing an elevator. It includes attributes for the number of floors
+ * in the building and the current floor of the elevator, and methods to interact with these attributes.
+ *</P>
+ *
+ * <H3>Elevator Methods</H3>
+ *
+ *<P>
+ * public Elevator() {<BR>
+ * Default constructor for the Elevator class. Initializes an elevator for a 5-storey building, starting
+ * on the 1st floor.
+ *</P>
+ *<P>
+ * public Elevator(int N) {<BR>
+ * Parameterized constructor for the Elevator class. Initializes an elevator for a building with the specified
+ * number of floors, starting on the 1st floor. Throws an IllegalArgumentException if the number of floors is less
+ * than 2.
+ *</P>
+ *<P>
+ * public int getStoreys() {<BR>
+ * Returns the number of floors in the building.
+ *</P>
+ *<P>
+ * public int getFloor() {<BR>
+ * Returns the current floor the elevator is on.
+ *</P>
+ *<P>
+ * public void setFloor(int newFloor) {<BR>
+ * Sets the elevator to a new floor, ensuring the new floor is within the valid range. Throws an IllegalArgumentException
+ * if the new floor is less than 1 or greater than the number of floors. Provides feedback if the elevator is already
+ * on the desired floor.
+ *</P>
+ *<P>
+ * public void finalize() {<BR>
+ * Simulates the destruction of the elevator. Moves the elevator to the 1st floor if it's not already there, resets
+ * the building and elevator attributes, and prints a message indicating the destruction.
+ *</P>
+ *<P>
+ * public static void main(String[] args) {<BR>
+ * Demonstrates the creation and usage of the Elevator class. Includes scenarios for creating an elevator, moving it
+ * to different floors, handling invalid operations, and destroying the elevator.
+ *</P>
+ */
+
+/**
+ *
+ *<H3>Test Plan</H3>
+ *
+ *<P>
+ * 1. Run the application.
+ * EXPECTED:
+ *    Console should display the results of each scenario, including creating the elevator, moving to different floors,
+ *    handling exceptions, and destroying the elevator.
+ * ACTUAL:
+ *    Results match the expected output.
+ *</P>
+ *<P>
+ * 2. Good data cases:
+ * EXPECTED:
+ *    - Elevator is created for a 100-floor building.
+ *    - Successfully moves to the 90th floor.
+ *    - Handles illegal move attempts (e.g., trying to move to floor 101) with appropriate exceptions.
+ *    - Displays the current floor correctly.
+ * ACTUAL:
+ *    Results match the expected behavior.
+ *</P>
+ *<P>
+ * 3. Bad data cases:
+ * EXPECTED:
+ *    - IllegalArgumentException is thrown for invalid floor numbers (e.g., floor less than 1 or greater than the number of floors).
+ * ACTUAL:
+ *    Results match the expected behavior, with appropriate exception messages printed for invalid floor values.
+ *</P>
+ */
+
+/**
+ * Java core packages
+ */
+import java.util.*;
+
+/**
+ * The Elevator class represents an elevator in a building, capable of moving between floors.
  */
 public class Elevator {
     private int N;               // The number of floors in the building
