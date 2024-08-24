@@ -1,3 +1,4 @@
+package Assignments.Assignment2;
 /**
  * title: Book.java
  * description: Assignment 2, Problem 4 - Create an Rodent Class

@@ -1,7 +1,8 @@
+package Assignments.Assignment2;
 /**
  * title: Book.java
- * description: Assignment 3, Problem 5 - Create a Bookshelf
- * date: August 14th, 2024
+ * description: Assignment 2, Problem 2 - Create a Book Class
+ * date: May 24, 2024
  * @author Gurjot Singh Dhanda 3691531
  * @version 1.0
  * @copyright 2011- 2024 Gurjot Singh Dhanda
@@ -110,11 +111,6 @@
  * Demonstrates the creation of Book objects and displays their details using the
  * displayBookDetails method.
  *</P>
-  *<P>
- * public int compareTo(Book other) {<BR>
- * Compares this book with another book by title, and if titles are the same,
- * compares by the year of publication.
- *</P>
  */
 
 /**
@@ -159,7 +155,7 @@ import java.util.*;
  * The Book class represents a book with attributes such as title, ISBN number,
  * author, edition, publisher, and year of publication.
  */
-public class Book implements Comparable<Book> {
+public class Book {
     // Private attributes
     private String title;              // The title of the book
     private String isbn;               // The ISBN number of the book
@@ -385,24 +381,5 @@ public class Book implements Comparable<Book> {
         System.out.println(); // Print a blank line for readability
         book5.displayBookDetails();
         System.out.println(); // Print a blank line for readability
-    }
-
-    /**
-     * Compares this book with another book by title, and if titles are the same,
-     * compares by the year of publication.
-     *
-     * @param other the other book to compare with
-     * @return a negative integer, zero, or a positive integer as this book
-     *         is less than, equal to, or greater than the specified book
-     */
-    @Override
-    public int compareTo(Book other) {
-        int titleComparison = this.title.compareToIgnoreCase(other.title);
-
-        if (titleComparison == 0) {
-            return Integer.compare(this.yearOfPublication, other.yearOfPublication);
-        }
-
-        return titleComparison;
     }
 }

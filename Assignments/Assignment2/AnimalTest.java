@@ -1,3 +1,4 @@
+package Assignments.Assignment2;
 /**
  * title: AnimalTest.java
  * description: Assignment 2, Problem 1 - Create an AnimalTest Class

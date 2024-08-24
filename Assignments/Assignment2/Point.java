@@ -1,3 +1,4 @@
+package Assignments.Assignment2;
 /**
  * Class representing a point in a 2D plane.
  */

@@ -1,3 +1,4 @@
+package Assignments.Assignment2;
 /**
  * title: Animal.java
  * description: Assignment 2, Problem 5 - Create a Point and Shape Class
