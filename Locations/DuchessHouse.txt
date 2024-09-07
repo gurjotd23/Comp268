@@ -1,0 +1,8 @@
+Name: Duchess House
+CardinalLocation: South
+
+Text: \nYou are the Duchess' house. You plead with her to take you to the croquet game to meet the Queen\nShe refuses stating that it is already late and she won't have time to prepare.\nThe Cheshire Cat with an ever smiling face informs you that the March Hare has a curse and if you go to his house and back, time will go back to afternoon.\nHurry! Let's go to the March Hare's house.
+
+Text: You are at the Duchess' house.
+
+Text: Very nice! The Duchess has had enough time to do her make up. Lets go the croquet playground.\n

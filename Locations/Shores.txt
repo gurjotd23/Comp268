@@ -1,0 +1,12 @@
+Name: Shores
+CardinalLocation: Northwest
+
+Text: \nIts a bit weird thinking you're in the shores of the sea of your own tears.\nYou and all the animals in the shore are all soaking wet. Dodo organizes a Caucus race in which everybody wins to dry you up.\nAfter the race, Dodo and the animals demand that you give an item that they will present as a prize for winning the race.\nYou should probably give the Dodo something.
+
+Text: Welcome back to the shores of the sea of your own tears. We see it has not dried up yet. You better be tall enough to walk in there.
+
+Text: You are back at the Shores outside the Long Hall. It is nice and dry.
+
+Text: You did not have an item to give the animals as a prize and they stoned you! Better luck next time.
+
+Text: The animals are happy about the prize.\nThey inform you that the White Rabbit has a house somewhere on the map and if you are nice to him, he can tell you where Dinah went.\nLet's go look for the White Rabbit's House.

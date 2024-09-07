@@ -1,0 +1,12 @@
+Name: Deep Well
+CardinalLocation: North
+Text: \n'This rabbit hole is dark. I can barely see where I am going'
+      \tOops!\n\nYou are falling into a well!\nOn the walls of the well are cupboards and shelves.
+
+Text: On top of a cupboard, you see a jar:
+
+Text: 'Let me check inside. Wow! That's a very lovely gem. Maybe I should collect it too!'
+
+Text: 'And is that a map hanging on the wall?'
+
+Text: \nBoom! You land on a floor. The landing is not as smooth as the flight here :-(

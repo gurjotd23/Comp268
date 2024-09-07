@@ -1,0 +1,44 @@
+Introduction:
+Press 'Enter' to continue.
+
+On a fine evening, you are lying beside you sister while she is reading a long boring book.
+
+Suddenly, a white rabbit with pink eyes and a long coat runs by you!
+
+'Was that a rabbit wearing a coat?', you wonder.
+
+Your cat Dinah also comes and runs by you going after the rabbit.
+
+You quickly go after the two to see what exactly is happening.
+
+The rabbit goes into a rabbit hole and does your cat, you quickly follow without thinking.
+
+Welcome to Wonderland, Alice!
+
+Instructions:
+\\tGame Instructions
+
+\\tTo skip this tutorial, type 'skip' or 's'.
+
+\\tTo move in any direction, simply type it e.g. 'Go North', 'Go South', 'Go Northwest', 'Go NW' etc.
+\\tTo see the map type 'see map', 'show map', or simply 'map'.
+
+\\tMovement is relative to your location, e.g. if you're in the South and you say 'Go East',
+\\tyou will be in the Southeast. Unless you know this place very well, you will want to grab a map when you see one.
+
+\\tTo collect an item, simply type 'collect'.
+\\tTo consume an item, you first need to collect it. Then type 'drink bottle', 'eat cake', 'eat mushroom' etc.
+\\tYou can also drop an item you have collected. Type 'drop gem', 'drop map', etc.
+
+\\tTo show items you have, type 'show inventory', 'i' or 'show items'.
+\\tTo give an item, type 'give gem', 'give glove', etc.
+
+\\tThere is a safe room which stores one item. You can drop an item there and pick it up later.
+
+\\tIf you do not wish to perform any action, simply press 'Enter'.
+
+\\tTo see these instructions anywhere, type 'instructions'.
+
+\\tTip: Always carry at least one item.
+
+\\tRemember to have fun in Wonderland, Alice!

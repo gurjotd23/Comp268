@@ -1,0 +1,14 @@
+Name: Rabbit's House
+CardinalLocation: West
+
+Text: \nYou have reached the White Rabbit's House. It is a tiny house.\nOutside, you meet an old snail who engages you in a long conversation.\nYou tell her how you got here and how you feel like you don't really have control over what is happening to you.\nShe offers you a mushroom that you can eat in peices and change your size anytime.\nMaybe you would like to collect the mushroom.
+
+Text: You meet the White Rabbit and he informs you that the Queens gaurd arrested Dinah when Dinah chased him upto the Queens residence.\nHe won't let Dinah free though, unless you do him a quick favor.\nFind a hand fan and glove that he is supposed to take to the Queen be he seems to have misplaced.\nYou don't seem to have much choice, do you? Let's go find those items.
+
+Text: You are at the White Rabbit's House. If you have found his items, type 'give both' to give them to him.
+
+Text: The rabbit appreciates your help but says that it is already too late and Dinah might be up for execution.\nHe says that if you go to March Hare's house and back, time will be go back and he will be able to get Dinah.\nLet's go find the March Hare's house.
+
+Text: Success! The White Rabbit helps you get Dinah and shows you your way back.
+
+Text: You are at the White Rabbit's House.

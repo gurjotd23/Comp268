@@ -1,0 +1,6 @@
+Name: Garden
+CardinalLocation: Northeast
+
+Text: \nYou are at the beautiful garden. You see some gardeners planting white roses.\n You approach one of them and ask if he might have seen your cat Dinah. She says your cat was just arrested by the Queen's gaurds.\nApparently, the Queen no longer uses hedgehogs as balls during a game of croquet,\nshe now prefers using cats wrapped in nets to a sphere.\nNo cat ever survives.\nShe informs you that the Duchess ususally gets invitations to all games of croquet with the Queen.\nIf you go to her and be nice, she might take you for a game and you get to save Dinah.
+
+Text: You are in the garden.

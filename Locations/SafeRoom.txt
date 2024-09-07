@@ -1,0 +1,6 @@
+Name: Safe Room
+CardinalLocation: Central
+
+Text: You are in the Safe Room. If you drop items here, you can come to pick them up later.
+
+Text: You are in the Safe Room.

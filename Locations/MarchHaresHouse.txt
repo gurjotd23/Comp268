@@ -1,0 +1,6 @@
+Name: March Hare's House
+CardinalLocation: Southeast
+
+Text: You have reached the March Hare's House. He is with the Mad Hatter taking tea.\nTime is taken back.\nYou can now return.
+
+Text: You are at the March Hare's House.

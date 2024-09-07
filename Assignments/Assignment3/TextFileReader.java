@@ -1,3 +1,4 @@
+package Assignments.Assignment3;
 /**
  * title: TextFileReader.java
  * description: Assignment 3, Problem 3 - Create a text file reader class

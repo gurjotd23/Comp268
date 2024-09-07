@@ -1,0 +1,26 @@
+Name: Long Hall
+CardinalLocation: North
+
+Text: \nYou see a long hall with lights hanging low from the ceiling and many doors.
+
+Text: You are in the Long Hall.
+
+Text: halfway across the hall, you see a glove and a hand fan. Nearer you see a golden key ontop of a glass table. You can try it on the foors but the key is too small.\nThen, you notice a very small door to the East of the hall in which the key fits. But you can't fit through that door. You go back to the table and place the golden key on top of it. Dejected!\nIf I were you, I wouldn't leave a golden key on a table. It is a collectible item.
+
+Text: At the center of the table, you notice a bottle with the writing 'Drink Me' on it.
+
+Text: At the bottom of the table, you also notice a cake written 'Eat Me' in candy.
+
+Text: Yey! Now I can go to the beautiful garden.
+
+Text: Oh no! You forgot the key. You try climbing up the table but you keep sliding off.\n You're standed but the cake is still an option or you could be stuck here forever.
+
+Text: You become so tall that your head hits against the ceiling/ '\n\tWhy did I eat this cake! ;-('\nYou start crying so much that your tears fill the long hall halfway through.\nThen, you start shrinking, you shrink so much that you are carried by your own sea of tears\nout of the Long Hall to a small shore outside where you meet other animals also carried by the small sea.
+
+Text: We're not gonna sit here all day! Try consuming what is available and see what goes. Type 'i' to see what have collected.
+
+Text: We're not gonna sit here all day! Try consuming what is available and see what goes. There is a bottle on top of the table.
+
+Text: and a cake.
+
+Text: Here's the rabbit's lost items, Type 'collect' to pick them up.\n
